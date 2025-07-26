@@ -3,3 +3,5 @@ flask-cors
 python-dotenv
 gunicorn==21.2.0
 faster-whisper==1.0.2
+requests
+
