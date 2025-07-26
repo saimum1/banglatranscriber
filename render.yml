@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: flask-transcriber
+    runtime: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn app:app
+    envVars:
+      - key: GLADIA_API_KEY
+        sync: false
+      - key: UPLOAD_ENDPOINT
+        sync: false
+      - key: TRANSCRIBE_ENDPOINT
+        sync: false
